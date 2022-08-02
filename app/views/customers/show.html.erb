@@ -1,0 +1,9 @@
+<h1>Customer Show Page</h1>
+
+<p><%= @customer.name %></p>
+<p><%= @customer.supermarket.name %></p>
+<p>Total: $<%= @customer.total_price%>.00</p>
+
+<% @customer.items.each do |item| %>
+<p><%= item.name %></p>
+<% end %>
